@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  padding: 30px;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.landing {
+  flex-direction: column;
+  text-align: center;
+}
+
+.floating-title {
+  font-size: 1.8rem;
+  margin: 12px;
+  padding: 10px 20px;
+  background: #0a3d62;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  animation: float 2s ease-in-out infinite;
+  transition: background 0.3s;
+}
+
+.floating-title:hover {
+  background: #0069d9;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hidden-section {
+  display: none;
+}
+
+/* Background images for sections */
+.home-bg {
+  background-image: url('https://th.bing.com/th/id/OIP.cDlQcvahTg0IVNpr6lmI2gHaEK?w=301&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3');
+}
+
+.about-bg {
+  background-image: url('https://image.slidesdocs.com/responsive-images/slides/0-yellow-green-simple-enterprise-new-employee-self-introduction-powerpoint-background_dbb296cd24__960_540.jpg');
+}
+
+.internships-bg {
+  background-image: url('https://thumbs.dreamstime.com/x/internship-animated-typography-hologram-internship-animated-typography-hologram-concept-256328157.jpg');
+}
+
+.skills-bg {
+  background-image: url('https://th.bing.com/th/id/OIP.fKaFQmXjbSF0SGC4OL6e9AHaDt?w=320&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+}
+
+.certifications-bg {
+  background-image: url('https://th.bing.com/th/id/OIP.zplsHnbA_zhRxmuTVrGvWwHaLb?w=136&h=210&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+}
+
+.education-bg {
+  background-image: url('data:image/webp;base64,UklGRo4cAABXRUJQVlA4IIIcAAAw...');
+}
+
+.contact-bg {
+  background-image: url('https://th.bing.com/th/id/OIP.OT-24X2iIFR-_oxs038YsgHaEK?w=294&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3');
+}
