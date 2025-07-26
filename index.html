@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archana Kindigeri | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="section-bg home-bg">
+    <div class="landing">
+      <h1 class="floating-title" onclick="showSection('about')">About Me</h1>
+      <h1 class="floating-title" onclick="showSection('projects')">Projects</h1>
+      <h1 class="floating-title" onclick="showSection('internships')">Internships</h1>
+      <h1 class="floating-title" onclick="showSection('skills')">Skills</h1>
+      <h1 class="floating-title" onclick="showSection('certifications')">Certifications</h1>
+      <h1 class="floating-title" onclick="showSection('education')">Education</h1>
+      <h1 class="floating-title" onclick="showSection('contact')">Contact</h1>
+    </div>
+  </div>
+
+  <div id="about" class="section-bg about-bg hidden-section">
+    <div class="content-card">
+      <h2>About Me</h2>
+      <p>Hello, I’m <strong>Kindigeri Archana</strong>, a B.Tech student in AI & DS at <strong>Vardhaman College of Engineering</strong>. I'm passionate about front-end development and building intelligent systems that merge design with AI for real-world impact.</p>
+    </div>
+  </div>
+
+  <div id="projects" class="section-bg plain-bg hidden-section">
+    <div class="content-card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Connect-In:</strong> Skill exchange platform. Tech: Python, HTML, CSS.</li>
+        <li><strong>Advanced Spectacles:</strong> Anti-glare smart glasses. Tech: C++, Python, AR.</li>
+        <li><strong>Smart City Analytics:</strong> Real-time pipeline. Tools: Power BI, AWS, Tableau.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="internships" class="section-bg internships-bg hidden-section">
+    <div class="content-card">
+      <h2>Internships</h2>
+      <ul>
+        <li><strong>Frontend Dev:</strong> HTML & CSS UI/UX apps.</li>
+        <li><strong>AWS Cloud Intern:</strong> Designed scalable AWS infra.</li>
+        <li><strong>ML Intern - Codetech:</strong> Model training & preprocessing.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="skills" class="section-bg skills-bg hidden-section">
+    <div class="content-card">
+      <h2>Skills</h2>
+      <p><strong>Languages:</strong> Python, C++, HTML, CSS, JS</p>
+      <p><strong>Frameworks:</strong> ReactJS, STL</p>
+      <p><strong>Tools:</strong> Git, VS Code, MongoDB, AWS</p>
+    </div>
+  </div>
+
+  <div id="certifications" class="section-bg certifications-bg hidden-section">
+    <div class="content-card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>C++ – Great Learning</li>
+        <li>NLP – Great Learning</li>
+        <li>Bootcamp – VCE</li>
+        <li>ML Internship – Codetech</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="education" class="section-bg education-bg hidden-section">
+    <div class="content-card">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech:</strong> AI & DS – 7.75 CGPA</li>
+        <li><strong>Intermediate:</strong> MPC – 9.2 CGPA</li>
+        <li><strong>10th:</strong> 10.0 CGPA</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="contact" class="section-bg contact-bg hidden-section">
+    <div class="content-card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:archanakindigeri923@gmail.com">archanakindigeri923@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/archanakindi" target="_blank">archanakindi</a></p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelector('.section-bg').style.display = 'none';
+      document.querySelectorAll('.hidden-section').forEach(s => s.style.display = 'none');
+      document.getElementById(id).style.display = 'flex';
+    }
+  </script>
+</body>
+</html>
